@@ -1,6 +1,8 @@
-# How to changing the hover color for the TreeViewItem in WPF TreeView (SfTreeView)?
+# How to change the hover color for the TreeViewItem in WPF TreeView (SfTreeView)?
 
 ## About the sample
+
+This sample illustrates how to change the hover color for the TreeViewItem in SfTreeView.
 
 In SfTreeView, when the mouse is hovered on the items, it will be highlighted in gray color by default. You can change the mouse hover color for the items by writing style for the items using the target type TreeViewItem.
 

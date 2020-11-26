@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.705
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HierarchyPropertyDescriptorDemo", "HierarchyPropertyDescriptorDemo.csproj", "{B5B62419-15EF-421B-B47F-96B5C97B102A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug-Xml|Any CPU = Debug-Xml|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Release-Xml|Any CPU = Release-Xml|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B5B62419-15EF-421B-B47F-96B5C97B102A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5B62419-15EF-421B-B47F-96B5C97B102A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5B62419-15EF-421B-B47F-96B5C97B102A}.Debug-Xml|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5B62419-15EF-421B-B47F-96B5C97B102A}.Debug-Xml|Any CPU.Build.0 = Debug|Any CPU
+		{B5B62419-15EF-421B-B47F-96B5C97B102A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5B62419-15EF-421B-B47F-96B5C97B102A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5B62419-15EF-421B-B47F-96B5C97B102A}.Release-Xml|Any CPU.ActiveCfg = Release|Any CPU
+		{B5B62419-15EF-421B-B47F-96B5C97B102A}.Release-Xml|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {19A439CE-1590-4A52-846F-3FD58933535F}
+	EndGlobalSection
+EndGlobal

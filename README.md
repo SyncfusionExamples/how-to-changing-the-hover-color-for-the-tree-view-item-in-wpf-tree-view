@@ -186,6 +186,8 @@ In SfTreeView, when the mouse is hovered on the items, it will be highlighted in
 
 ![TreeView_Image](TreeView_Image.png)
 
+KB article - [How to change the hover color for the TreeViewItem in WPF TreeView (SfTreeView)?](https://www.syncfusion.com/kb/12127/how-to-change-the-hover-color-for-the-treeviewitem-in-wpf-treeview-sftreeview)
+
 ## Requirements to run the demo
 Visual Studio 2015 and above versions
 

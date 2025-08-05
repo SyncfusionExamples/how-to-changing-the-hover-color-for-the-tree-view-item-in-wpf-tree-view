@@ -4,7 +4,7 @@
 
 This sample illustrates how to change the hover color for the TreeViewItem in SfTreeView.
 
-In SfTreeView, when the mouse is hovered on the items, it will be highlighted in gray color by default. You can change the mouse hover color for the items by writing style for the items using the target type TreeViewItem.
+In [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview?_gl=1*1h0iuid*_ga*odqzmzc0ode1lje3ndcymzc2mjg.*_ga_41j4hfmx1j*cze3ntqznjy3mdgkbziwnsrnmsr0mtc1ndm2odm2nsrqnjakbdakada.), when the mouse is hovered on the items, it will be highlighted in gray color by default. You can change the mouse hover color for the items by writing style for the items using the target type [TreeViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.TreeViewItem.html?_gl=1*1h0iuid*_ga*ODQzMzc0ODE1LjE3NDcyMzc2Mjg.*_ga_41J4HFMX1J*czE3NTQzNjY3MDgkbzIwNSRnMSR0MTc1NDM2ODM2NSRqNjAkbDAkaDA.).
 
 ```Xaml
 <Window.Resources>
@@ -12,11 +12,11 @@ In SfTreeView, when the mouse is hovered on the items, it will be highlighted in
     
     <DataTemplate x:Key="busyIndicatorTemplate">
         <syncfusion:SfBusyIndicator x:Name="PART_BusyIndicator"
-                                IsBusy="True"
-                                AnimationType="DotCircle"
-                                ViewboxWidth="{TemplateBinding Width}"
-                                VerticalContentAlignment="Center"
-                                VerticalAlignment="Center">
+                                    IsBusy="True"
+                                    AnimationType="DotCircle"
+                                    ViewboxWidth="{TemplateBinding Width}"
+                                    VerticalContentAlignment="Center"
+                                    VerticalAlignment="Center">
         </syncfusion:SfBusyIndicator>
     </DataTemplate>
 
@@ -32,9 +32,9 @@ In SfTreeView, when the mouse is hovered on the items, it will be highlighted in
                                 <VisualState x:Name="DropAsChild">
                                     <Storyboard>
                                         <ObjectAnimationUsingKeyFrames BeginTime="00:00:00"
-                                                                   Duration="00:00:00"
-                                                                   Storyboard.TargetName="BorderContent"
-                                                                   Storyboard.TargetProperty="Background">
+                                                                       Duration="00:00:00"
+                                                                       Storyboard.TargetName="BorderContent"
+                                                                       Storyboard.TargetProperty="Background">
                                             <DiscreteObjectKeyFrame KeyTime="00:00:00">
                                                 <DiscreteObjectKeyFrame.Value>
                                                     <SolidColorBrush Color="#D2DFF2" />
@@ -42,9 +42,9 @@ In SfTreeView, when the mouse is hovered on the items, it will be highlighted in
                                             </DiscreteObjectKeyFrame>
                                         </ObjectAnimationUsingKeyFrames>
                                         <ObjectAnimationUsingKeyFrames BeginTime="00:00:00"
-                                                                   Duration="00:00:00"
-                                                                   Storyboard.TargetName="BorderContent"
-                                                                   Storyboard.TargetProperty="BorderBrush">
+                                                                       Duration="00:00:00"
+                                                                       Storyboard.TargetName="BorderContent"
+                                                                       Storyboard.TargetProperty="BorderBrush">
                                             <DiscreteObjectKeyFrame KeyTime="00:00:00">
                                                 <DiscreteObjectKeyFrame.Value>
                                                     <SolidColorBrush Color="#2B579A"/>
@@ -52,9 +52,9 @@ In SfTreeView, when the mouse is hovered on the items, it will be highlighted in
                                             </DiscreteObjectKeyFrame>
                                         </ObjectAnimationUsingKeyFrames>
                                         <ObjectAnimationUsingKeyFrames BeginTime="00:00:00"
-                                                                   Duration="00:00:00"
-                                                                   Storyboard.TargetName="BorderContent"
-                                                                   Storyboard.TargetProperty="BorderThickness">
+                                                                       Duration="00:00:00"
+                                                                       Storyboard.TargetName="BorderContent"
+                                                                       Storyboard.TargetProperty="BorderThickness">
                                             <DiscreteObjectKeyFrame KeyTime="00:00:00">
                                                 <DiscreteObjectKeyFrame.Value>
                                                     <Thickness>1</Thickness>
@@ -62,9 +62,9 @@ In SfTreeView, when the mouse is hovered on the items, it will be highlighted in
                                             </DiscreteObjectKeyFrame>
                                         </ObjectAnimationUsingKeyFrames>
                                         <ObjectAnimationUsingKeyFrames BeginTime="00:00:00"
-                                                                   Duration="00:00:00"
-                                                                   Storyboard.TargetName="PART_ExpanderView"
-                                                                   Storyboard.TargetProperty="Background">
+                                                                       Duration="00:00:00"
+                                                                       Storyboard.TargetName="PART_ExpanderView"
+                                                                       Storyboard.TargetProperty="Background">
                                             <DiscreteObjectKeyFrame KeyTime="00:00:00">
                                                 <DiscreteObjectKeyFrame.Value>
                                                     <SolidColorBrush Color="#D2DFF2" />
@@ -82,52 +82,52 @@ In SfTreeView, when the mouse is hovered on the items, it will be highlighted in
                             <ColumnDefinition Width="Auto"/>
                         </Grid.ColumnDefinitions>
                         <Border x:Name="BorderContent"  
-                            BorderThickness="{TemplateBinding BorderThickness}"
-                            BorderBrush="{TemplateBinding BorderBrush}"/>
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                BorderBrush="{TemplateBinding BorderBrush}"/>
 
                         <Border x:Name="PART_HoverBorder" 
-                            Visibility="Collapsed" 
-                            Margin="1"
-                            Background="LightBlue"/>
+                                Visibility="Collapsed" 
+                                Margin="1"
+                                Background="LightBlue"/>
 
-                        <StackPanel x:Name="PART_IndentContainer" 
-                                Panel.ZIndex="0"
-                                Orientation="Horizontal"
-                                Grid.Column="0">
+                        <StackPanel x:Name="PART_IndentContainer"
+                                    Panel.ZIndex="0"
+                                    Orientation="Horizontal"
+                                    Grid.Column="0">
                             <Rectangle x:Name="PART_IndentLine" 
-                                StrokeDashArray="2,2"
-                                HorizontalAlignment="Stretch"
-                                Visibility="Hidden">
+                                       StrokeDashArray="2,2"
+                                       HorizontalAlignment="Stretch"
+                                       Visibility="Hidden">
                             </Rectangle>
                         </StackPanel>
 
                         <Grid x:Name="PART_LineGrid"
-                          Grid.Column="1"
-                          Panel.ZIndex="0"
-                          Width="{TemplateBinding ExpanderWidth}"
-                          Visibility="Hidden">
+                              Grid.Column="1"
+                              Panel.ZIndex="0"
+                              Width="{TemplateBinding ExpanderWidth}"
+                              Visibility="Hidden">
                             <Rectangle x:Name="PART_HorizontalLine" 
-                                StrokeDashArray="2,2"
-                                Margin="10,0,0,0"
-                                Width="10"
-                                VerticalAlignment="Center" />
+                                       StrokeDashArray="2,2"
+                                       Margin="10,0,0,0"
+                                       Width="10"
+                                       VerticalAlignment="Center" />
                             <Rectangle x:Name="PART_VerticalLine" 
-                                StrokeDashArray="2,2"
-                                HorizontalAlignment="Stretch"/>
+                                       StrokeDashArray="2,2"
+                                       HorizontalAlignment="Stretch"/>
                         </Grid>
 
                         <ContentControl x:Name="PART_ExpanderView"
-                                    Focusable="False"
-                                    Width="{TemplateBinding ExpanderWidth}"
-                                    Visibility="{Binding HasChildNodes, Converter={StaticResource boolToVisibilityConverter}}"
-                                    ContentTemplate="{TemplateBinding ExpanderTemplate}">
+                                        Focusable="False"
+                                        Width="{TemplateBinding ExpanderWidth}"
+                                        Visibility="{Binding HasChildNodes, Converter={StaticResource boolToVisibilityConverter}}"
+                                        ContentTemplate="{TemplateBinding ExpanderTemplate}">
                         </ContentControl>
 
                         <syncfusion:TreeNodeView x:Name="PART_ContentView" Grid.Column="2"
-                                        Margin="4,0,4,0"
-                                        VerticalAlignment="Center"
-                                        Focusable="False"
-                                        ContentTemplate="{TemplateBinding ItemTemplate}">
+                                                 Margin="4,0,4,0"
+                                                 VerticalAlignment="Center"
+                                                 Focusable="False"
+                                                 ContentTemplate="{TemplateBinding ItemTemplate}">
                         </syncfusion:TreeNodeView>
 
                         <Border x:Name="PART_DragLine" Grid.ColumnSpan="3" Visibility="Collapsed" BorderBrush="#2B579A" />

@@ -1,4 +1,4 @@
-# How to change the hover color for the TreeViewItem in WPF TreeView (SfTreeView)?
+# How to change the hover color for the TreeViewItem in WPF TreeView?
 
 ## About the sample
 
@@ -183,7 +183,6 @@ In [WPF TreeView](https://www.syncfusion.com/wpf-controls/treeview?_gl=1*1h0iuid
     </Style>
 </Window.Resources>
 ```
-
 ![TreeView_Image](TreeView_Image.png)
 
 ## Requirements to run the demo
